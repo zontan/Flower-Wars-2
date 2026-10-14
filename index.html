@@ -539,7 +539,7 @@ Raven leaned forward, and the crowd stilled, drawing a collective breath. &quot;
 --
 Applejack would know what to do. She always gave the best advice. Also, she was hot. If you tell her that your whole society is trying to kill you because your wings are too pretty, she&#39;ll understand.
 
-Applejack shouldn&#39;t have been anything to you. She was just a farm pony, someone you shouldn&#39;t have given a second glance. But you had. Something about her drew you back. Whether it was her strong shoulder or her kind eyes, you kept returning to the same farm.
+Applejack shouldn&#39;t have been anything to you. She was just a farm pony, someone you shouldn&#39;t have given a second glance. But you had. Something about her drew you back. Whether it was her strong shoulders or her kind eyes, you kept returning to the same farm.
 
 And Applejack hadn&#39;t treated you like all your admirers had. She was so good at understanding. She gave great advice. 
 
@@ -669,7 +669,7 @@ And Applejack hadn&#39;t treated you like all your admirers had. She was so good
 
 You needed that advice now.
 
-&gt; [[Tell Applejack about the Flower Wars]]</tw-passagedata><tw-passagedata pid="48" name="Watch" tags="" position="700,1275" size="100,100">The two small figures reached the pyramid’s peak, where Raven Inkwell waited. She gestured, and Fluttershy whispered into the jaguar’s ear. Obediently, it climbed onto the great stone alter and rolled onto its back. Fluttershy stood back, and her gaze sought out yours in the square below.
+&gt; [[Tell Applejack about the Flower Wars]]</tw-passagedata><tw-passagedata pid="48" name="Watch" tags="" position="700,1275" size="100,100">The two small figures reached the pyramid’s peak, where Raven Inkwell waited. She gestured, and Fluttershy whispered into the jaguar’s ear. Obediently, it climbed onto the great stone altar and rolled onto its back. Fluttershy stood back, and her gaze sought out yours in the square below.
 
 “Celestia!” the crowd roared. Begging for her to look at them. To see them, and to accept the gift they were giving her. “Celestia Huitzilopochtli!”
 
@@ -855,7 +855,7 @@ goalWin:true
 --
 &quot;Never what? Never fell for you? I know how you feel about me, Applejack.&quot;
 
-That was all this was. Applejack loved you, just like all the others, and she was jealous that goddess had a stronger claim on your life.
+That was all this was. Applejack loved you, just like all the others, and she was jealous that the goddess had a stronger claim on your life.
 
 &quot;I — I don&#39;t...&quot; Applejack fumbled, and now she was the one who couldn&#39;t find the right words. &quot;I don&#39;t want to lose you.&quot;
 
@@ -1141,8 +1141,8 @@ Ending 11: True Ending \
 *The goddess descended, and everything changed.*
 [if !endingTrue &amp;&amp; _hintTrueEnding]
 Ending 11: ??? \
-{reveal link: &#39;Hint 1&#39;, text: &quot;*Make sure you make your intentions known.*&quot;}
-{reveal link: &#39;Hint 2&#39;, text: &quot;*You&#39;ll need a little bit of everything. Endings 8, 9, and 10 will help with that.*&quot;}
+{reveal link: &#39;Hint 1&#39;, text: &quot;*Make sure you make your intentions known.*&quot;} \
+{reveal link: &#39;Hint 2&#39;, text: &quot;*You&#39;ll need a little bit of everything. Endings 8, 9, and 10 will help with that.*&quot;} \
 {reveal link: &#39;Hint 3&#39;, text: &quot;*Just this once, everybody lives.*&quot;}
 [if !endingTrue &amp;&amp; !_hintTrueEnding]
 Ending 11: ???
@@ -1296,7 +1296,7 @@ Once again, you found yourself alone.
 
 &gt; [[Enter the Arena]]</tw-passagedata><tw-passagedata pid="89" name="I don&#39;t want to die" tags="" position="1875,1900" size="100,100">&quot;Oh, Rainbow, there are *lots* of ways to not die, don&#39;t you worry about that! There&#39;s only like, six endings that result in your death. So far, anyway. That&#39;s less than half!&quot;
 
-&quot;How do you know that?&quot; you ask suspiciously. &quot;Isn&#39;t that meta-knowledge?&quot;
+&quot;How do you know that?&quot; you asked suspiciously. &quot;Isn&#39;t that meta-knowledge?&quot;
 
 &quot;Don&#39;t worry about that, sugarcube. It&#39;s what I need to know to answer your question.&quot;
 
@@ -1772,13 +1772,13 @@ haveWeapon:true
 You turned and ran. You didn&#39;t need to fight, just survive. The fewer opportunities you gave your opponents to harm you, the better. Ideally, they&#39;d all fight each other until only you and one other were left, but that was probably wishful thinking.
 [if goalWin]
 You turned and ran. You didn&#39;t need to fight to win this thing. It would be more impressive if you did, of course, but you&#39;d already started on the back hoof and it was more important to emerge unscathed. You needed to conserve your strength for the most dangerous opponents, you couldn&#39;t be using it all brawling right at the start.
-[else]
+[if !goalSurvive &amp;&amp; !goalWin]
 You turned and ran. You didn&#39;t need this fight. Your priority was to get through this, first and foremost, and you couldn&#39;t do that if you were being pressured so quickly. Hopefully, they&#39;d find easier targets and you could have a moment to collect yourself.
 
 [if _success]
 *Speed check: success!*
 
-You quickly outpaced the two earth ponies, and while a knife or two comes flying your way, it&#39;s clear that hitting such a fast target was beyond their abilities. After a moment or two they gave up, and went to find other targets instead. That gave you a moment alone to examine the arena properly. The purple unicorn was nowhere to be seen, while the white one was circling the edge of the arena, much like you. No one seemed willing to challenge her yet. The two earth ponies had switched to trying to corner the other pegasus instead.
+You quickly outpaced the two earth ponies, and while a knife or two came flying your way, it was clear that hitting such a fast target was beyond their abilities. After a moment or two they gave up, and went to find other targets instead. That gave you a moment alone to examine the arena properly. The purple unicorn was nowhere to be seen, while the white one was circling the edge of the arena, much like you. No one seemed willing to challenge her yet. The two earth ponies had switched to trying to corner the other pegasus instead.
 
 &gt; [[Take a breather-&gt;Keep watching and waiting]] 
 [else]
@@ -2669,7 +2669,7 @@ _numOptions(twinsHP === 2): _numOptions + 1
 --
 You take a moment to regroup and take stock of the arena.
 [if _twinsongbird]
-The two earth ponies clearly ganged up on the other pegasus, and it went poorly for the latter. She is crumpled against one wall, and the earth ponies look like they&#39;re searching for new targets. They&#39;ll come for you if you let them.
+The two earth ponies clearly ganged up on the other pegasus, and it went poorly for the latter. She was crumpled against one wall, and the earth ponies looked like they were searching for new targets. They&#39;d come for you if you let them.
 [if _twilightSongbird]
 The other pegasus is crumpled in a corner, clearly unconscious or worse. You have no idea what took her out.
 [if _twilightTwins]
@@ -3638,7 +3638,7 @@ You turned to face your destiny. You had earned it.
 
 One step, two. Three, and you were beyond the temple walls, suspended over nothing. Four, and the heat was blistering, burning your skin. Five, and the edges of your feathers were beginning to singe. *Ohuaya Ohuaya!* The rattles and the whistles, the voices raised in song — it was a crescendo, yet somehow muted and far behind you. There was only the volcano, there was only Popocanterpetl and the goddess at its heart.
 
-You spread your stunted wings out to their fullest extent, and launched yourself. Fire belched up from below, reaching to embrace her, and you finally flew.
+You spread your stunted wings out to their fullest extent, and launched yourself. Fire belched up from below, reaching to embrace you, and you finally flew.
 
 -up and out and into the sky. It turns out, hot air rises and even nonmagical wings can catch a fucking thermal. You kept ascending all the way up into Celestia&#39;s sky palace, where she gave you a very fancy ring and tea and cupcakes. 
 
@@ -3660,7 +3660,7 @@ Applejack tried to stop the procession. &quot;The goddess wouldn&#39;t want her 
 
 &quot;Goddamnit,&quot; Raven Inkwell said. &quot;We always get the annoying pro-lifers at these things.&quot;
 
-The guards violated Applejack&#39;s civil rights and brought you to the top of the mountain. Then Raven Inkwell said somethinga about giving the goddess your love and kicked you into the crater.
+The guards violated Applejack&#39;s civil rights and brought you to the top of the mountain. Then Raven Inkwell said something about giving the goddess your love and kicked you into the crater.
 
 Man, you *really* wish your wings worked.
 
@@ -3685,7 +3685,7 @@ She faltered and looked back, and all you saw on her face was fear. &quot;Wait,&
 
 One of the warrior-priests nudged her with his spear, and a priestess took her hoof and cajoled her forward. One step at a time, she climbed. Up and up and up to Popocanterpetl Peak.
 
-Raven Inkwell waiting at the top, and Twilight said something to her that you couldn&#39;t hear. It didn&#39;t seem to faze the High Priestess at all.
+Raven Inkwell was waiting at the top, and Twilight said something to her that you couldn&#39;t hear. It didn&#39;t seem to faze the High Priestess at all.
 
 &quot;We present to the goddess her bride!&quot; Raven Inkwell called out, her voice booming across the distance. &quot;The victor of our Flower Wars, we return her beauty to the goddess who gave her to us.&quot;
 
